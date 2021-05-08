@@ -1,0 +1,512 @@
+/*Add stylesheet to the main css file / for home page*/
+@import "reset.css";
+@import "nav.css";
+@import "button.css";
+@import "footer.css";
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas:
+        "n n n n n n n n n n n n"
+        "h h h h h h h h h h h h"
+        "sc sc sc sc sc sc sc sc sc sc sc sc"
+        "m m m m m m m a a a a a"
+        "ab ab ab ab ab ab ab ab ab ab ab ab"
+        "f f f f f f f f f f f f"
+}
+
+
+/*Header*/
+.hero-section {
+    position: relative;
+    grid-area: h;
+    /** top, transparent black **/
+    background:
+        linear-gradient(rgba(9, 10, 1, 0.8), rgba(9, 10, 1, 0.5)),
+        /**bottom, image **/
+        /*Author photo JP Klucz*/
+        url(https://i.postimg.cc/QtKsTBMg/background-header.jpg);
+    background-size: cover;
+    /*background image - center*/
+    background-position: center, center;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+
+.hero-section-content {
+    grid-area: 2/2/2/13;
+    padding: 46px 96px;
+    color: #fff;
+    width: 50%;
+}
+
+
+.hero-section-content h3 {
+    margin-top: 10px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color: #FFEE82;
+}
+
+
+.hero-section-content h1 {
+    line-height: 1em;
+}
+
+
+.hero-section p {
+    padding-top: 20px;
+}
+
+
+.hero-section h2 {
+    font-family: 'Give You Glory', Arial, Helvetica, sans-serif, cursive;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 20px;
+}
+
+
+.divider-wave-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    display: block;
+    line-height: 0;
+    fill: #fff;
+    z-index: 30;
+}
+
+
+/**Project card**/
+
+/*Section with blog topics*/
+
+.section-post-type {
+    grid-area: sc;
+    background-color: transparent;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.section-container {
+    grid-area: 3/2/3/12;
+
+    position: relative;
+    left: 0;
+    height: 180px;
+    background-color: #090A01;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -90px;
+    z-index: 31;
+    padding: 0 5%;
+
+    /*Shadow under section - try to FIX THIS*/
+    border-bottom-width: 100%;
+    border-bottom: rgba(0, 0, 0, 18%);
+}
+
+
+.section-menu {
+    position: absolute;
+
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.section-menu li {
+    display: inline-block;
+    list-style: none;
+    flex-direction: row;
+    padding-right: 60px;
+}
+
+
+.section-menu li img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    margin-bottom: -50px;
+}
+
+
+.section-menu li a {
+    padding: 1em;
+    color: #FFEE82;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1cm;
+    display: flex;
+    background-color: transparent;
+    text-decoration: none;
+    justify-content: center;
+}
+
+
+.section-menu li a :hover {
+    opacity: 0.8;
+    cursor: pointer;
+    color: #F7F7F5;
+}
+
+
+/*Main with blog card*/
+.main {
+    grid-area: m;
+    grid-area: 4/2/4/7;
+
+}
+
+
+.main-container {
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container h2 {
+    margin-bottom: 20px;
+}
+
+
+blockquote {
+    font-size: 1.4em;
+    font-family: 'Give You Glory', Arial, Helvetica, sans-serif;
+    color: #5A5636;
+    margin: 70px auto;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 7px solid #090A01;
+    position: relative;
+    background: #ededed;
+}
+
+
+blockquote::before {
+    font-family: Arial, Helvetica, sans-serif;
+    content: "\201C";
+    color: #090A07;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+
+blockquote::after {
+    content: '';
+}
+
+
+blockquote span {
+    display: block;
+    color: #090A01;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1.0em;
+    margin-top: 1em;
+}
+
+
+.card-main {
+    grid-area: a;
+    grid-area: 4/8/4/12;
+
+}
+
+
+.card-container {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+
+    margin-top: 70px;
+    border: 1px dotted black;
+    border-radius: 4px;
+}
+
+figure {
+    display: inline;
+}
+
+
+.article-img {
+    display: block;
+    width: 300px;
+    height: 30vh;
+    background-image: url(/image/20171031_125743.jpg);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    background-size: cover;
+    /*background image - center*/
+    background-position: center, center;
+
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+figcaption {
+    font-style: italic;
+    font-weight: bold;
+    display: inline-flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+
+figure p {
+    color: #757363;
+    font-weight: bold;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    text-decoration: underline;
+    letter-spacing: 0.1cm;
+    margin-bottom: 20px;
+}
+
+
+.author {
+    background-color: #FFEE82;
+    width: 60%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+p .author-info {
+    line-height: 1.8em;
+    align-self: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*About author*/
+.about-container {
+    grid-area: ab;
+    grid-area: 5/2/5/12;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+.about-content {
+    padding: 46px 96px;
+    color: #fff;
+    width: 50%;
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+img.about-img {
+    width: 15vw;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+
+    background-image: url(/image/author.png);
+
+    background-size: cover;
+    /*background image - center*/
+    background-position: center, center;
+
+    border: 1px solid black;
+    border-radius: 90%;
+    margin-top: 20px;
+}
+
+.author-info {
+    justify-content: flex-end;
+    align-self: center;
+}
+
+
+
+@media (max-width: 599px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+        grid-template-areas:
+            "n n n n n n n n n n n n"
+            "h h h h h h h h h h h h"
+            "sc sc sc sc sc sc sc sc sc sc sc sc"
+            "m m m m m m m m m m m m"
+            "a a a a a a a a a a a a"
+            "ab ab ab ab ab ab ab ab ab ab ab ab"
+            "f f f f f f f f f f f f";
+    }
+
+
+    .hero-section {
+        grid-area: h;
+        grid-area: 2/2/2/12;
+    }
+
+
+    .section-container {
+        grid-area: sc;
+        grid-area: 3/2/3/12;
+        height: 380px;
+    }
+
+    .section-menu {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .section-menu li {
+        display: block;
+    }
+
+
+    .main {
+        grid-area: m;
+        grid-area: 4/2/4/12;
+    }
+
+
+    .card-main {
+        grid-area: a;
+        grid-area: 5/2/5/12;
+    }
+
+
+    .about-container {
+        grid-area: ab;
+        grid-area: 6/2/6/12;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+        grid-template-areas:
+            "n n n n n n n n n n n n"
+            "h h h h h h h h h h h h"
+            "sc sc sc sc sc sc sc sc sc sc sc sc"
+            "m m m m m m m m m m m m"
+            "a a a a a a a a a a a a"
+            "ab ab ab ab ab ab ab ab ab ab ab ab"
+            "f f f f f f f f f f f f";
+    }
+
+    .hero-section {
+        grid-area: h;
+        grid-area: 2/2/2/12;
+    }
+
+
+    .section-container {
+        grid-area: sc;
+        grid-area: 3/2/3/12;
+        height: 480px;
+    }
+
+
+    .section-menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .section-menu li {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+    }
+
+
+    .main {
+        grid-area: m;
+        grid-area: 4/2/4/12;
+    }
+
+
+    .card-main {
+        grid-area: a;
+        grid-area: 5/2/5/12;
+    }
+
+
+    .about-container {
+        grid-area: ab;
+        grid-area: 6/2/6/12;
+    }
+}

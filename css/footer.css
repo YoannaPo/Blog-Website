@@ -1,0 +1,117 @@
+/*Footer*/
+
+.footer-container {
+    grid-area: f;
+    margin-top: 70px;
+
+    position: relative;
+
+    /*display: flex;*/
+
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    height: 200px;
+
+}
+
+
+.footer-menu {
+    position: absolute;
+    display: flex;
+    /*: absolute;*/
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    z-index: 35;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.footer-menu li {
+    /*display: block;*/
+    list-style: none;
+    flex-direction: row;
+
+}
+
+
+.footer-menu li a {
+    /*for mobile version 
+    display: block;*/
+    display: flex;
+    padding: 1em;
+
+    color: #9E5C6A;
+    /*#FFEE82; yellow*/
+    font-size: 16px;
+    letter-spacing: 0.1cm;
+    font-weight: bolder;
+    background-color: transparent;
+    text-decoration: none;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: space-around;
+
+    z-index: 37;
+
+
+}
+
+.footer-menu li a:hover {
+    cursor: pointer;
+    color: #FFEE82;
+    background-color: rgba(9, 10, 1, 0.7);
+}
+
+
+.curve-container {
+    position: absolute;
+    height: 100%;
+    left: 0;
+
+    /*position: absolute;*/
+
+    width: 100%;
+    display: block;
+    z-index: 31;
+
+}
+
+.cls-1 {
+
+    fill: #090A01;
+    margin: 0;
+    padding: 0;
+    z-index: 36;
+}
+
+
+
+@media (max-width: 599px) {
+    .footer-container {
+        grid-area: f;
+        grid-area: 7/2/7/12;
+        /*height: 380px;*/
+    }
+
+
+    .footer-menu {
+        display: block;
+    }
+
+
+    .footer-menu li {
+        display: table;
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0;
+
+    }
+}

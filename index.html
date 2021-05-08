@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JP Klucz">
+    <title>Personal Blog Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+
+
+    <!-- stylesheet linked -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Navigation bar -->
+        <nav class="navbar" role="navigation">
+
+            <div class="nav-container">
+                <a href="index.html"><img class="logo" alt="pencil and brush" src="/image/brush-pencil_black.svg"></a>
+
+
+                <ul class="navbar-menu">
+                    <li><a class="nav-link"  href="index.html">Home</a></li>
+                    <li><a class="nav-link"  href="blog-page.html">Blog</a></li>
+                    <li><a class="nav-link"  href="index.html#about">About</a></li>
+                </ul>
+
+
+                <!--Hamburger menu-->
+                <label for="nav-toggle" class="icon-burger visuallyhidden">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <input type="checkbox" id="nav-toggle" aria-label="Dropdown menu">
+                </label>
+
+            </div>
+        </nav>
+
+
+        <!-- Header -->
+        <header class="hero-section" role="banner">
+            <div class="hero-section-content">
+                <h3>Hi, I'm JP Klucz</h3>
+                <h1>H1 Title with at least two line of text</h1>
+                <p>PARAGRAPHSpudding topping sweet roll tart tiramisu apple pie. Sesame snaps chocCarrot cake donut
+                    lollipop
+                    biscuit macaroonhears lollipop. Dessert icing candy canes brownie dragée bonbon.</p>
+                <h2>jpk</h2>
+            </div>
+            <div class="divider-wave-bottom">
+                <svg x="0px" y="0px" viewBox="0 0 1200 161.5">
+                    <path class="st0" d="M0,84.6c388.8,213.9,783.8-270.7,1200,0v76.9H0V84.6z" /></svg>
+            </div>
+        </header>
+
+
+        <!-- Section with blog topics -->
+        <div class="section-container" aria-hidden="false">
+            <ul class="section-menu">
+                <li><img src="image/type-post-icon/design_icon.svg" alt="ruller and pencil on design icon"
+                        style="width: 120px; height: 120px; margin-top: -60px;"><a class="sec-link" href="blog-page.html#design"><p>Design</p></a>
+                </li>
+                <li><img src="image/type-post-icon/streetart_icon.svg" alt="painting utensils"
+                        style="width: 120px; height: 120px; margin-top: -60px;"><a class="sec-link" href="blog-page.html#streetart"><p>Streetart</p></a>
+                </li>
+                <li><img src="image/type-post-icon/art_icon.svg" alt="gears arranged in the pattern"
+                        style="width: 120px; height: 120px; margin-top: -60px;"><a class="sec-link" href="blog-page.html#art"><p>Art</p></a>
+                </li>
+                <li><img src="image/type-post-icon/learning_icon.svg" alt="tools"
+                        style="width: 120px; height: 120px; margin-top: -60px;"><a class="sec-link" href="blog-page.html#learning"><p>Learning</p></a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--Describing info and blog card -->
+        <main class="main" role="main">
+            <div class="main-container">
+                <h2>
+                    H2 title size This is a big title with two line of text but smaller size
+                </h2>
+                <p>pudding topping sweet roll tart tiramisu apple pie. Sesame snaps chocolate candy
+                    dragée oat cake. Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
+                    chocolate marshmallow sweet roll chocolate brownie
+                    gummies. Soufflé macaroon marzipan gummies marzipan marshmallow jelly-o jelly-
+                </p>
+                <p>pudding topping sweet roll tart tiramisu</p>
+                <p>pudding topping sweet roll tart tiramisu</p>
+                <p>pudding topping sweet roll tart tiramisu</p>
+                <button class="card-button"> <a href="blog-page.html">Go to blog page</a></button>
+                <blockquote>The holy grail is to spend less time making the picture than it takes people to look at it.
+                    <span>Banksy</span>
+                </blockquote>
+            </div>
+
+        </main>
+
+
+        <article class="card-main">
+            <div class="card-container">
+                <figure>
+                    <img class="article-img" src="/image/20171031_125743.jpg" alt="girl with a flowers">
+                    <figcaption>Location: Berlin</figcaption>
+                    <p>Streetart</p>
+                </figure>
+                <h3 class="author">About the artist:</h3>
+                <p class="author-info">Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
+                    chocolate marshmallow sweet roll choco brownie. Soufflé macaroon marzipan gummies marzipan
+                    marshmallow jelly-o jelly. <br>Pudding topping sweet roll tart tiramisu.</br>
+                    Tiramisu apple pie. Sesame snaps chocolate candy dragée oat cake. Caramels carrot cake cookie
+                    pudding tart candy canes. Brownie halvah sesame snaps chocolate marshmallow sweet roll chocolate
+                    brownie.
+                </p>
+                <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
+            </div>
+        </article>
+
+        <section class="about-container" id="about">
+            <div class="about-content>">
+                <h3 class="author"> About the author:</h3>
+                <figure>
+                    <img class="about-img" src="/image/author.png" alt="JPK ML portrait">
+                    <figcaption>JP Klucz</figcaption>
+                </figure>
+                <p class="author-info">Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
+                    chocolate marshmallow sweet roll choco brownie. Soufflé macaroon marzipan gummies marzipan
+                    marshmallow jelly-o jelly. <br>Pudding topping sweet roll tart tiramisu.</br>
+                </p>
+            </div>
+
+        </section>
+        <!--<aside class="about-aside">
+            <blockquote>I want to live in a world created by art, not just decorated with it.
+                <span>Banksy</span>
+            </blockquote>
+        </aside> -->
+
+        <!-- wave with background-->
+        <!--moga sie przydac na dol -->
+
+        <!--<section>
+                <div class="transparent">
+                    <svg id="curve" data-name=Layer 1 viewBox="0 0 1416.99 174.01">
+
+                        <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z"
+                            transform="translate(0-135.53)" />
+                    </svg>
+
+                    <svg id="second-curve" data-name=Layer 1 viewBox="0 0 1416.99 174.01">
+
+                        <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z"
+                            transform="translate(0-135.53)" />
+
+                    </svg>
+
+
+                </div>
+
+
+            </section>
+            !-->
+
+
+        <!--Footer-->
+        <footer class="footer-container" role="contentinfo">
+            <ul class="footer-menu">
+                <li><a class="nav-link" id="twitter" href="https://twitter.com/Joanna_Po_">Twitter</a></li>
+                <li><a class="nav-link" id="linkedin" href="https://www.linkedin.com/">Linkedin</a></li>
+                <li><a class="nav-link" id="facebook" href="https://www.facebook.com/">Facebook</a></li>
+            </ul>
+            <div class="curve-container">
+                <svg id="curve" data-name=Layer 1 viewBox="0 0 1200 165.5">
+
+                    <path class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,170.57,808,10.34V309.54H0V280.8Z"
+                        transform="translate(0-135.53)" />
+                </svg>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

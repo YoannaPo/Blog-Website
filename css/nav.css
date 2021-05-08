@@ -1,0 +1,265 @@
+/*Navbar*/
+
+.navbar {
+    grid-area: n;
+    /* background-color: #090A01;*/
+}
+
+/*Add shadow line under navbar*/
+
+/*color: #999999;
+    or color: rgba(153, 153, 153, 16%); */
+
+.nav-container {
+    position: fixed;
+    z-index: 35;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+    background-color: #fff;
+    /*usunac ponizej, aby odzyskac padding w H1*/
+    padding: 0 5%;
+}
+
+a .logo {
+    background-size: cover;
+}
+
+.logo {
+    width: 40px;
+    /*background-image: url("/image/brush-pencil_black.svg");*/
+    height: 40px;
+    margin: 30px;
+    min-height: 30px;
+}
+
+.logo:hover {
+    cursor: pointer;
+    background-image: url("/image/brush-pencil_white.svg");
+    background-color: rgba(9, 10, 1, 0.6);
+}
+
+
+/*Ul links*/
+.navbar-menu {
+    float: right;
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navbar-menu li {
+    list-style: none;
+    flex-direction: row;
+}
+
+
+.navbar-menu li a {
+    display: block;
+    padding: 1em;
+    color: #090A01;
+    /*#FFEE82; yellow*/
+    font-size: 16px;
+    letter-spacing: 0.1cm;
+    font-weight: bolder;
+    background-color: transparent;
+    text-decoration: none;
+    z-index: 35;
+}
+
+
+.navbar-menu li a:hover {
+    cursor: pointer;
+    color: #FFEE82;
+    background-color: rgba(9, 10, 1, 0.7);
+}
+
+
+/*Hamburger menu*/
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+/*
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}*/
+
+
+.icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.icon-burger:hover {
+    cursor: pointer;
+    background-color: rgba(9, 10, 1, 0.7);
+}
+
+.icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #090A01;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.icon-burger .line:hover {
+    background-color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+
+/*Hamurger menu visible on small devices*/
+@media screen and (max-width: 599px) {
+    .logo {
+        margin: 20px;
+        float: left;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+    }
+
+    .navbar-menu {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+
+        background-color: rgba(196, 132, 132, 0.8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+
+    .navbar-menu a {
+        font-size: 20px;
+    }
+
+
+    /*check functionality*/
+    nav :checked~.navbar-menu {
+        bottom: 0;
+    }
+
+
+    .icon-burger {
+        display: block;
+    }
+
+
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+
+    }
+
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+
+    }
+
+
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin: 35px;
+        float: left;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+    }
+
+    .navbar-menu {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        /*wywalic, zeby odzyskac header */
+        justify-content: space-evenly;
+        /*wywalic, aby odzyskac podklad ze zdjeciem */
+        background-color: rgba(196, 132, 132, 0.8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+
+    .navbar-menu a {
+        font-size: 20px;
+    }
+
+
+    /*check functionality*/
+    nav :checked~.navbar-menu {
+        bottom: 0;
+    }
+
+
+    .icon-burger {
+        display: block;
+
+        margin-right: 35px;
+    }
+
+
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+
+    }
+
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+
+    }
+
+
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+}
