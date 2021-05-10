@@ -168,15 +168,14 @@ p {
 
 
 .section-menu li img {
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-right: 10px;
     margin-bottom: -50px;
-
-    width: 120px; 
-    height: 120px; 
     margin-top: -60px;
 }
 
@@ -304,7 +303,6 @@ figure {
 
 
 figcaption {
-    font-style: italic;
     font-weight: bold;
     display: inline-flex;
     flex-direction: row;
@@ -320,7 +318,6 @@ figure p {
     flex-direction: row;
     align-self: center;
     justify-content: center;
-    text-decoration: underline;
     letter-spacing: 0.1cm;
     margin-bottom: 20px;
 }

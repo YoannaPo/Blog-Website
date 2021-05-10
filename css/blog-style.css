@@ -180,7 +180,6 @@ figure {
 
 
 figcaption {
-    font-style: italic;
     font-weight: bold;
     display: inline-flex;
     flex-direction: row;
@@ -196,7 +195,6 @@ figcaption {
     flex-direction: row;
     align-self: center;
     justify-content: flex-end;
-    text-decoration: underline;
     letter-spacing: 0.1cm;
     margin-bottom: 20px;
 }
