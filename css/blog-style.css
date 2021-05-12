@@ -117,6 +117,13 @@ p {
     z-index: 30;
 }
 
+.divider-wave-bottom svg .st0 {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: transalte(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate (0, 0);
+}
 
 .test2 {
     grid-area: c;
