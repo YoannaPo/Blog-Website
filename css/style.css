@@ -37,7 +37,7 @@ p {
 .container {
     height: 100%;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 0;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 60px auto 60px;
     grid-template-areas:
@@ -150,8 +150,8 @@ p {
     padding: 0 5%;
 
     /*Shadow under section - try to FIX THIS*/
+    border-bottom: 1px solid rgba(0, 0, 0, 18%);
     border-bottom-width: 100%;
-    border-bottom: rgba(0, 0, 0, 18%);
 }
 
 

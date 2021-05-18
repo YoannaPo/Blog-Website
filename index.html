@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Blog Page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap"
@@ -21,25 +22,31 @@
 
 <body>
     <div class="container">
+
         <!--Navigation bar -->
         <nav class="navbar" role="navigation">
 
-            <div class="nav-container">
+            <div class="nav-container" id="menu-toggle">
                 <a href="index.html"><img class="logo" alt="pencil and brush" src="image/brush-pencil_black.svg"></a>
 
-
-                <ul class="navbar-menu">
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="blog-page.html">Blog</a></li>
-                    <li><a class="nav-link"  href="index.html#about">About</a></li>
-                </ul>
-                <!--Hamburger menu-->
                 <label for="nav-toggle" class="icon-burger visuallyhidden">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+
                     <input type="checkbox" id="nav-toggle" aria-label="Dropdown menu">
+
+                    <ul class="navbar-menu">
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="blog-page.html">Blog</a></li>
+                        <li><a class="nav-link"  href="index.html#about">About</a></li>
+                    </ul>
+
+
+                    <!--Hamburger menu-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
                 </label>
+
             </div>
         </nav>
 
@@ -80,7 +87,6 @@
                     brownie.
                 </p>
                 <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
-
             </div>
 
             <div class="card-container-blog" id="art">
@@ -99,7 +105,6 @@
                     brownie.
                 </p>
                 <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
-
             </div>
         </div>
 
@@ -120,7 +125,6 @@
                     brownie.
                 </p>
                 <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
-
             </div>
 
             <div class="card-container-blog" id="streetart">
@@ -139,9 +143,7 @@
                     brownie.
                 </p>
                 <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
-
             </div>
-
         </div>
 
 
@@ -160,12 +162,10 @@
                         transform="translate(0-135.53)" />
                 </svg>
             </div>
-
         </footer>
 
 
     </div>
-
 
 
 </body>

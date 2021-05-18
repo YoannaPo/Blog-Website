@@ -2,38 +2,44 @@
 
 .navbar {
     grid-area: n;
-    /* background-color: #090A01;*/
+    grid-area: 1/2/1/12;
+    position: relative;
 }
 
-/*Add shadow line under navbar*/
-
-/*color: #999999;
-    or color: rgba(153, 153, 153, 16%); */
 
 .nav-container {
-    position: fixed;
+    position: relative;
+    /*position: fixed;*/
     z-index: 35;
     left: 0;
     right: 0;
     top: 0;
     font-family: 'Montserrat', sans-serif;
-    height: 100px;
-    background-color: #fff;
-    /*usunac ponizej, aby odzyskac padding w H1*/
-    padding: 0 5%;
+    height: 60px;
+    /*background-color: #fff;*/
+    width: 100%;
+    background-color: rgba(148, 148, 155, 0.76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
+
 
 a .logo {
+    /*position: absolute;*/
     background-size: cover;
+    display: flex;
+    flex-direction: row;
 }
 
-.logo {
-    width: 40px;
-    /*background-image: url("/image/brush-pencil_black.svg");*/
-    height: 40px;
-    margin: 30px;
-    min-height: 30px;
 
+.logo {
+    grid-area: 1/2/1/3;
+    width: 40px;
+    height: 40px;
+    /*margin: 30px;*/
+    min-height: 30px;
 }
 
 .logo:hover {
@@ -44,7 +50,8 @@ a .logo {
 
 /*Ul links*/
 .navbar-menu {
-    float: right;
+    /*16.05*/
+    /*float: right;*/
     width: 60%;
     height: 100%;
     margin: 0;
@@ -57,6 +64,9 @@ a .logo {
 
 .navbar-menu li {
     list-style: none;
+    /*dodane*/
+    display: flex;
+
     flex-direction: row;
 }
 
@@ -80,6 +90,7 @@ a .logo {
     color: #FFEE82;
     background-color: rgba(9, 10, 1, 0.7);
 }
+
 
 
 /*Hamburger menu*/
@@ -139,21 +150,30 @@ a .logo {
 }*/
 
 
+label .icon-burger {
+    justify-content: flex-end;
+}
 
 .icon-burger {
-    /* display: none;*/
+    display: none;
+
     position: absolute;
-    right: 5%;
-    top: 50%;
+    /*right: 5%;
+    top: 50%;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
     min-width: 30px;
     min-height: 30px;
+    width: 100%;
 
 }
 
 
 .icon-burger:hover {
     cursor: pointer;
-    background-color: rgba(9, 10, 1, 0.6);
+    /*background-color: rgba(9, 10, 1, 0.6);*/
 }
 
 .icon-burger span,
@@ -162,32 +182,32 @@ input {
 }
 
 
-
-/*
-.icon-burger .line {
-    width: 30px;
-    height: 5px;
-    background-color: #090A01;
-    margin: 5px;
-    border-radius: 3px;
-    transition: all .3s ease-in-out;
-}
-
-.icon-burger .line:hover {
-    background-color: #fff;
-    transition: all .2s ease-in-out;
-}
-*/
-
 /*Hamurger menu visible on small devices*/
 @media screen and (max-width: 599px) {
     .logo {
-        margin: 20px;
+        position: absolute;
+        visibility: hidden;
+        display: none;
+        /*margin: 20px;
         float: left;
         width: 30px;
         height: 30px;
-        justify-content: center;
+        justify-content: center;*/
     }
+
+
+    .icon-burger {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .icon-burger:hover {
+        cursor: pointer;
+
+        background-color: rgba(9, 10, 1, 0.6);
+    }
+
 
     .navbar-menu {
         float: none;
@@ -215,8 +235,6 @@ input {
     }
 
 
-    /*check functionality*/
-
     #menu-toggle span {
         display: block;
         width: 30px;
@@ -239,14 +257,9 @@ input {
 
     #nav-toggle {
         position: absolute;
-        margin-top: -100px;
+        /*margin-top: -100px;*/
     }
-
-
 }
-
-
-
 
 
 
@@ -254,12 +267,28 @@ input {
 
 @media screen and (max-width: 769px) {
     .logo {
-        margin: 35px;
+        position: absolute;
+        visibility: hidden;
+        display: none;
+        /*margin: 35px;
         float: left;
         width: 30px;
         height: 30px;
-        justify-content: center;
+        justify-content: center;*/
     }
+
+
+    .icon-burger {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .icon-burger:hover {
+        cursor: pointer;
+        background-color: rgba(9, 10, 1, 0.6);
+    }
+
 
     .navbar-menu {
         float: none;
@@ -268,7 +297,7 @@ input {
         left: 0;
         right: 0;
 
-        top: 100px;
+        top: 40px;
         bottom: 100%;
         width: auto;
         height: auto;
@@ -308,7 +337,6 @@ input {
 
     nav :checked~.icon-burger .line:nth-child(3) {
         transform: translateY(-10px) rotate(-225deg);
-
     }
 
 
@@ -316,7 +344,6 @@ input {
         opacity: 0;
     }
 
-    /*sprawdzic do  tego meomentu*/
 
     #menu-toggle span {
         display: block;
@@ -335,8 +362,8 @@ input {
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
             background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
             opacity 0.55s ease;
-
     }
+
 
     #nav-toggle {
         position: absolute;

@@ -41,7 +41,7 @@ p {
 .container {
     height: 100%;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 0;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 60px auto 60px;
     grid-template-areas:
@@ -266,6 +266,10 @@ figcaption {
         grid-area: 4/2/4/12;
     }
 
+    .article-img2 {
+        width: 230px;
+    }
+
 
     .card-main3 {
         grid-area: k;
@@ -307,6 +311,7 @@ figcaption {
         grid-area: g;
         grid-area: 4/2/4/12;
     }
+
 
 
     .card-main3 {
