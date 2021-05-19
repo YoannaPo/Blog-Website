@@ -6,8 +6,6 @@
 
     position: relative;
 
-    /*display: flex;*/
-
     top: 0;
     font-family: 'Montserrat', sans-serif;
 
@@ -38,7 +36,6 @@
     /*display: block;*/
     list-style: none;
     flex-direction: row;
-
 }
 
 
@@ -98,20 +95,100 @@
     .footer-container {
         grid-area: f;
         grid-area: 7/2/7/12;
+        margin-top: 20px;
         /*height: 380px;*/
+        height: fit-content;
     }
 
 
     .footer-menu {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
 
-    .footer-menu li {
-        display: table;
-        display: table-cell;
-        vertical-align: middle;
-        margin-bottom: 0;
+    .footer-menu li a {
+        display: flex;
 
+        padding: 1em;
+
+        color: #9E5C6A;
+        /*#FFEE82; yellow*/
+        font-size: 14px;
+        letter-spacing: 0.1cm;
+        font-weight: bolder;
+        background-color: transparent;
+        text-decoration: none;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        z-index: 37;
+
+
+    }
+
+    .footer-menu li a:hover {
+        cursor: pointer;
+        color: #FFEE82;
+        background-color: rgba(9, 10, 1, 0.7);
+    }
+
+
+    .curve-container {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        /*position: absolute;*/
+
+        width: 100%;
+        display: block;
+        z-index: 31;
+        margin-top: 300px;
+    }
+
+}
+
+
+@media screen and (max-width: 769px) {
+    .footer-container {
+        grid-area: f;
+        grid-area: 7/2/7/12;
+        margin-top: 40px;
+        /*height: 380px;*/
+        height: fit-content;
+    }
+
+    .footer-menu li a {
+        display: flex;
+
+        padding: 1em;
+
+        color: #9E5C6A;
+        /*#FFEE82; yellow*/
+        font-size: 16px;
+        letter-spacing: 0.1cm;
+        font-weight: bolder;
+        background-color: transparent;
+        text-decoration: none;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        z-index: 37;
+    }
+
+
+    .curve-container {
+        position: absolute;
+        height: 100%;
+        left: 0;
+
+        width: 100%;
+        display: block;
+        z-index: 31;
+        margin-top: 200px;
     }
 }

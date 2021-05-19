@@ -102,39 +102,10 @@ a .logo {
 }*/
 
 
-/*dodane*/
-/*
-#menu-toggle span {
-    display: block;
-    width: 30px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-
-    background: #090A01;
-    border-radius: 3px;
-
-    z-index: 1;
-
-    transform-origin: 4px 0px;
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
-
-}
-
 #menu-toggle span:nth-last-child(1) {
     margin-bottom: 0;
 }
-*/
 
-
-/*this slide it from the left*/
-/*
-#menu-toggle input:checked~ul {
-    transform: none;
-}*/
 
 
 /*
@@ -317,7 +288,7 @@ input {
     }
 
 
-    /*check functionality*/
+
     nav :checked~.navbar-menu {
         bottom: 0;
     }
