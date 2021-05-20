@@ -40,6 +40,7 @@ a .logo {
     height: 40px;
     /*margin: 30px;*/
     min-height: 30px;
+
 }
 
 .logo:hover {
@@ -111,14 +112,14 @@ a .logo {
 /*
 .visuallyhidden {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0 0 0 0); 
     height: 1px;
     margin: -1px;
     overflow: hidden;
     padding: 0;
     position: absolute;
     width: 1px;
-}*/
+} */
 
 
 label .icon-burger {
@@ -127,6 +128,8 @@ label .icon-burger {
 
 .icon-burger {
     display: none;
+
+    /*visibility: hidden;*/
 
     position: absolute;
     /*right: 5%;
@@ -152,6 +155,11 @@ input {
     display: none;
 }
 
+/*
+.visually-hidden {
+    display: none;
+    visibility: hidden;
+}*/
 
 /*Hamurger menu visible on small devices*/
 @media screen and (max-width: 599px) {
