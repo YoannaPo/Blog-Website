@@ -1,0 +1,60 @@
+/*Navigation bar*/
+
+.navbar {
+    grid-area: n;
+    grid-area: 1/2/1/12;
+    position: relative;
+}
+
+.nav-container {
+    overflow: hidden;
+    background-color: rgba(148, 148, 155, 0.76);
+}
+
+
+.nav-container a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Ul links*/
+.navbar-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-menu li a {
+    /*float: left;*/
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    /*dodane*/
+
+    padding: 1em;
+    color: #090A01;
+    /*#FFEE82; yellow*/
+    font-size: 16px;
+    letter-spacing: 0.1cm;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+
+.navbar-menu li a:hover {
+    cursor: pointer;
+    color: #FFEE82;
+    background-color: rgba(9, 10, 1, 0.7);
+
+}
+
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
