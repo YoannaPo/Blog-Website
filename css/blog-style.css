@@ -158,6 +158,14 @@ p {
     margin-top: 70px;
     border: 1px dotted black;
     border-radius: 4px;
+    /* shadow around the card */
+    box-shadow: -2px 7px 14px -5px rgba(56, 56, 56, 0.58);
+}
+
+/*makes card bigger after hover*/
+.card-container-blog:hover {
+    transform: scale(1.02);
+    transition: all .5s linear;
 }
 
 
