@@ -238,7 +238,7 @@ figcaption {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 1fr;
-        grid-gap: 10px;
+        grid-gap: 0;
         grid-template-areas:
             "n n n n n n n n n n n n"
             "h h h h h h h h h h h h"
@@ -295,7 +295,7 @@ figcaption {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 1fr;
-        grid-gap: 5px;
+        grid-gap: 0;
         grid-template-areas:
             "n n n n n n n n n n n n"
             "h h h h h h h h h h h h"
