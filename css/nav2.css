@@ -88,4 +88,10 @@
         height: 40px;
 
     }
+
+    /*@media only screen and (orientation: landscape) {
+        nav {
+          // custom rules based on orientation
+        }
+      } */
 }
