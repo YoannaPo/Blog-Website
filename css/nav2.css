@@ -8,7 +8,8 @@
 
 .nav-container {
     overflow: hidden;
-    background-color: rgba(148, 148, 155, 0.76);
+    background-color: #f8f8f8f8;
+    /*rgba(148, 148, 155, 0.76);*/
 }
 
 
@@ -64,7 +65,8 @@
 
     .nav-container {
         overflow: hidden;
-        background-color: rgba(148, 148, 155, 0.76);
+        background-color: #f8f8f8;
+        /*rgba(148, 148, 155, 0.76);*/
     }
 
 

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="JP Klucz">
-    <title>Personal Blog Website</title>
+
+    <title>Blog Page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap"
         rel="stylesheet">
@@ -16,8 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap"
         rel="stylesheet">
 
-    <!-- stylesheet linked -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- blog stylesheet linked -->
+    <link rel="stylesheet" href="css/blog-style.css">
 </head>
 
 <body>
@@ -31,9 +31,9 @@
                 <ul class="navbar-menu">
                     <li><a class="nav-link"><a href="index.html"><img class="logo" alt="pencil and brush" src="image/brush-pencil_black.svg"></a>
                     </li>
-                    <li><a class="nav-link"  href="index.html">Home</a></li>
-                    <li><a class="nav-link"  href="index.html">Blog</a></li>
-                    <li><a class="nav-link"  href="blog-page.html#about">About</a></li>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="blog-page.html">Blog</a></li>
+                    <li><a class="nav-link"  href="index.html#about">About</a></li>
                 </ul>
 
             </div>
@@ -50,93 +50,92 @@
                     biscuit macaroonhears lollipop. Dessert icing candy canes brownie dragée bonbon.</p>
                 <h2>jpk</h2>
             </div>
-
             <div class="divider-wave-bottom">
                 <svg viewBox="0 0 1200 161.5">
                     <path class="st0" d="M0,84.6c388.8,213.9,783.8-270.7,1200,0v76.9H0V84.6z" /></svg>
             </div>
         </header>
 
+        <div class="test2"></div>
 
-        <!-- Section with blog topics -->
-        <div class="section-container" aria-hidden="false">
-            <ul class="section-menu">
-                <li>
-                    <img src="image/type-post-icon/design_icon.svg"
-                        alt="ruller and pencil on design icon"><a class="sec-link" href="index.html#design"><p>Design</p></a>
-                </li>
-                <li>
-                    <img src="image/type-post-icon/streetart_icon.svg"
-                        alt="painting utensils"><a class="sec-link" href="index.html#streetart"><p>Streetart</p></a>
-                </li>
-                <li>
-                    <img src="image/type-post-icon/art_icon.svg"
-                        alt="gears arranged in the pattern"><a class="sec-link" href="index.html#art"><p>Art</p></a>
-                </li>
-                <li>
-                    <img src="image/type-post-icon/learning_icon.svg"
-                        alt="tools"><a class="sec-link" href="index.html#learning"><p>Learning</p></a>
-                </li>
-            </ul>
-        </div>
-
-
-        <!--Describing info and blog card -->
-        <main class="main" role="main">
-            <div class="main-container">
-                <h2>
-                    H2 title size This is a big title with two line of text but smaller size
-                </h2>
-                <p>pudding topping sweet roll tart tiramisu apple pie. Sesame snaps chocolate candy
-                    dragée oat cake. Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
-                    chocolate marshmallow sweet roll chocolate brownie
-                    gummies. Soufflé macaroon marzipan gummies marzipan marshmallow jelly-o jelly-
-                </p>
-                <p>pudding topping sweet roll tart tiramisu</p>
-                <p>pudding topping sweet roll tart tiramisu</p>
-                <p>pudding topping sweet roll tart tiramisu</p>
-                <button class="card-button"> <a href="index.html">Go to blog page</a></button>
-                <blockquote>The holy grail is to spend less time making the picture than it takes people to look at it.
-                    <span><b>Banksy</b></span>
-                </blockquote>
-            </div>
-        </main>
-
-
-        <article class="card-main">
-            <div class="card-container">
+        <!--Main-->
+        <div class="card-main2" role="main">
+            <div class="card-container-blog" id="learning">
                 <figure>
-                    <img class="article-img" src="image/20171031_125743.jpg" alt="girl with a flowers">
-                    <figcaption>
-                        <b><em>Location: Berlin</em></b>
-                    </figcaption>
-                    <p><b><u>Streetart</u></b></p>
+                    <img class="article-img2" src="image/mika-baumeister--oXb5tA61wI-unsp.jpg" alt="bulb">
+                    <figcaption><em>Location: Cambridge</em></figcaption>
                 </figure>
+                <p><b><u>Learning</u></b></p>
                 <h3 class="author">About the artist:</h3>
-                <p class="author-info">Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
+                <p class="author-info">
+                    Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
                     chocolate marshmallow sweet roll choco brownie. Soufflé macaroon marzipan gummies marzipan
                     marshmallow jelly-o jelly. <br>Pudding topping sweet roll tart tiramisu.</br>
                     Tiramisu apple pie. Sesame snaps chocolate candy dragée oat cake. Caramels carrot cake cookie
                     pudding tart candy canes. Brownie halvah sesame snaps chocolate marshmallow sweet roll chocolate
                     brownie.
                 </p>
-                <button class="card-button"> <a href="index.html#streetart">See more</a></button>
+                <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
             </div>
-        </article>
 
-        <section class="about-container" id="about">
-            <div class="about-content>">
-                <h3 class="author"> About the author:</h3>
+            <div class="card-container-blog" id="art">
                 <figure>
-                    <img class="about-img" src="image/author.png" alt="JPK ML portrait">
-                    <figcaption><b>JP Klucz</b></figcaption>
+                    <img class="article-img2" src="image/20171031_134211.jpg" alt="girl with a can">
+                    <figcaption><em>Location: Berlin</em></figcaption>
                 </figure>
-                <p class="author-info">Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
+                <p><b><u>Art </u></b></p>
+                <h3 class="author">About the artist:</h3>
+                <p class="author-info">
+                    Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
                     chocolate marshmallow sweet roll choco brownie. Soufflé macaroon marzipan gummies marzipan
                     marshmallow jelly-o jelly. <br>Pudding topping sweet roll tart tiramisu.</br>
+                    Tiramisu apple pie. Sesame snaps chocolate candy dragée oat cake. Caramels carrot cake cookie
+                    pudding tart candy canes. Brownie halvah sesame snaps chocolate marshmallow sweet roll chocolate
+                    brownie.
                 </p>
+                <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
             </div>
-        </section>
+        </div>
+
+        <div class="card-main3">
+            <div class="card-container-blog" id="design">
+                <figure>
+                    <img class="article-img2" src="image/20170331_6075.jpg" alt="two masks">
+                    <figcaption><em>Location: Berlin</em></figcaption>
+                </figure>
+                <p><b><u>Design</u></b></p>
+                <h3 class="author">About the artist:</h3>
+                <p class="author-info">
+                    Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
+                    chocolate marshmallow sweet roll choco brownie. Soufflé macaroon marzipan gummies marzipan
+                    marshmallow jelly-o jelly. <br>Pudding topping sweet roll tart tiramisu.</br>
+                    Tiramisu apple pie. Sesame snaps chocolate candy dragée oat cake. Caramels carrot cake cookie
+                    pudding tart candy canes. Brownie halvah sesame snaps chocolate marshmallow sweet roll chocolate
+                    brownie.
+                </p>
+                <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
+            </div>
+
+            <div class="card-container-blog" id="streetart">
+                <figure>
+                    <img class="article-img2" src="image/20171031_125743.jpg" alt="girl with a flowers">
+                    <figcaption><em>Location: Berlin</em></figcaption>
+                </figure>
+                <p><b><u>Streetart</u></b></p>
+                <h3 class="author">About the artist:</h3>
+                <p class="author-info">
+                    Caramels carrot cake cookie pudding tart candy canes. Brownie halvah sesame snaps
+                    chocolate marshmallow sweet roll choco brownie. Soufflé macaroon marzipan gummies marzipan
+                    marshmallow jelly-o jelly. <br>Pudding topping sweet roll tart tiramisu.</br>
+                    Tiramisu apple pie. Sesame snaps chocolate candy dragée oat cake. Caramels carrot cake cookie
+                    pudding tart candy canes. Brownie halvah sesame snaps chocolate marshmallow sweet roll chocolate
+                    brownie.
+                </p>
+                <button class="card-button"> <a href="blog-page.html#streetart">See more</a></button>
+            </div>
+        </div>
+
+
 
         <!--Footer-->
         <footer class="footer-container" role="contentinfo">
