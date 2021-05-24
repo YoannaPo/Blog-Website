@@ -21,7 +21,7 @@ Personal blog a website that uses only HTML and CSS. It also includes custom ima
 * Blog Page
 
 ## Status
-Project is:  _in progress_
+Project is:  _finished_
 
 ## Live
 https://yoannapo.github.io/Blog-Website/
