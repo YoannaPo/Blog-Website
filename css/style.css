@@ -59,7 +59,7 @@ p {
         linear-gradient(rgba(9, 10, 1, 0.8), rgba(9, 10, 1, 0.5)),
         /**bottom, image **/
         /*Author photo JP Klucz*/
-        url(https://github.com/YoannaPo/Blog-Website/blob/upstream1/image/background_header.jpg);
+        url("https://i.postimg.cc/9MXHPNrF/background-header.jpg");
     background-size: cover;
     /*background image - center*/
     background-position: center, center;
