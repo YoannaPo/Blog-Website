@@ -20,7 +20,7 @@ Personal blog - a website that uses only HTML and CSS. It also includes custom i
 ## Process 
 Before coding the website - I designed style guide, colour palette and the entire layout following Mobile First Approach. I worked in Adobe XD. I prepared wireframes for each of the subpages and then a clickable prototype. Below is an excerpt from the results of this process
 
-<img align="center" src="https://github.com/YoannaPo/Blog-Website/assets/blog_page_wireframe.gif" alt="blog page"/>
+<img align="center" src="(https://github.com/YoannaPo/Blog-Website/blob/upstream1/assets/blog_page_wireframe.gif)" alt="blog page"/>
 
 ## Pages
 * Homepage
