@@ -9,6 +9,7 @@
 * [Technologies](#technologies)
 * [Pages](#pages)
 * [Status](#status)
+* [Live](#live)
 
 ## Process 
 Before coding the website - I designed style guide, colour palette and the entire layout following Mobile First Approach. I worked in Adobe XD. I prepared wireframes for each of the subpages and then a clickable prototype. Below is an excerpt from the results of this process
@@ -25,6 +26,7 @@ Personal blog - a website that uses only HTML and CSS. It also includes custom i
 ## Pages
 * Homepage
 * Blog Page
+![alt="blog page website"](https://github.com/YoannaPo/Blog-Website/blob/upstream1/assets/blog_page_website.gif)
 
 ## Status
 Project is:  _finished_
