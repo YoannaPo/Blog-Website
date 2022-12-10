@@ -1,7 +1,7 @@
 
 
 # Blog-Website
-> Personal Blog Website for Udacity Front End Web Developer Nanodegree course.  
+> Personal Blog Website with designed style guide, colour palette. 
 
 ## Table of contents
 * [Process](#process)
